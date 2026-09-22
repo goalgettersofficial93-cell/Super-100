@@ -36,7 +36,9 @@
   ::-webkit-scrollbar-track{ background:transparent; }
   ::-webkit-scrollbar-thumb{ background:var(--blue-200); border-radius:20px; }
   ::-webkit-scrollbar-thumb:hover{ background:var(--blue-300); }
+
   .wrap{ max-width:1180px; margin:0 auto; padding:0 1rem 3rem; }
+
   /* HEADER */
   .site-header{
     position:sticky; top:0; z-index:50;
@@ -57,6 +59,7 @@
   .brand-text{ min-width:0; }
   .brand-text h1{ margin:0; font-size:1.15rem; font-weight:800; letter-spacing:-0.01em; color:var(--ink-900); line-height:1.25; overflow-wrap:anywhere; }
   .brand-text p{ margin:0.1rem 0 0; font-size:0.78rem; color:var(--ink-500); font-weight:600; }
+
   .stat-pills{ display:flex; gap:0.5rem; flex:none; }
   .pill{
     display:flex; flex-direction:column; align-items:center; justify-content:center;
@@ -65,6 +68,7 @@
   }
   .pill b{ font-size:0.95rem; color:var(--blue-700); line-height:1.1; }
   .pill span{ font-size:0.62rem; color:var(--ink-500); font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+
   .search-row{ display:flex; gap:0.55rem; align-items:center; }
   .search-box{ position:relative; flex:1; min-width:0; }
   .search-box svg.icon-search{ position:absolute; left:14px; top:50%; transform:translateY(-50%); width:18px; height:18px; color:var(--ink-300); pointer-events:none; }
@@ -84,6 +88,7 @@
   .clear-btn svg{ width:14px; height:14px; }
   .clear-btn.show{ display:flex; }
   .clear-btn:hover{ background:var(--blue-200); }
+
   .icon-btn-group{ display:flex; gap:0.4rem; flex:none; }
   .icon-btn{
     display:flex; align-items:center; justify-content:center; gap:0.35rem;
@@ -95,7 +100,9 @@
   .icon-btn svg{ width:17px; height:17px; flex:none; }
   .icon-btn:hover{ transform:translateY(-1px); box-shadow:var(--shadow-md); border-color:var(--blue-300); }
   .icon-btn:active{ transform:translateY(0); }
+
   .breadcrumb{ display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; font-size:0.8rem; color:var(--ink-500); font-weight:600; margin-top:0.65rem; min-height:1.1rem; }
+
   /* FOLDER GRID */
   .folder-grid{ display:flex; flex-direction:column; gap:0.85rem; margin-top:1.4rem; }
   .folder-card{
@@ -123,9 +130,11 @@
   .file-count-badge{ background:var(--blue-50); color:var(--blue-700); font-size:0.72rem; font-weight:800; padding:0.28rem 0.6rem; border-radius:20px; border:1px solid var(--blue-100); white-space:nowrap; }
   .chevron{ flex:none; width:20px; height:20px; color:var(--ink-300); transition:transform .28s var(--ease), color .2s; }
   .folder-card.open .chevron{ transform:rotate(180deg); color:var(--blue-600); }
+
   .folder-body{ max-height:0; overflow:hidden; transition:max-height .32s var(--ease); }
   .folder-body-inner{ padding:0 1.1rem 1rem; border-top:1px solid var(--border); margin-top:0; }
   .file-list{ display:flex; flex-direction:column; gap:0.5rem; padding-top:0.85rem; }
+
   .file-item{
     display:flex; align-items:center; gap:0.7rem; padding:0.65rem 0.7rem; border-radius:var(--radius-md);
     background:var(--surface-soft); border:1px solid transparent; flex-wrap:wrap;
@@ -146,13 +155,16 @@
   .open-btn.video:hover{ background:linear-gradient(135deg, var(--blue-500), var(--blue-600)); color:#fff; border-color:transparent; transform:translateY(-1px); }
   .open-btn.pdf{ color:var(--pdf); }
   .open-btn.pdf:hover{ background:linear-gradient(135deg, #ff6b61, var(--pdf)); color:#fff; border-color:transparent; transform:translateY(-1px); }
+
   .empty-state{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:3.5rem 1rem; text-align:center; color:var(--ink-500); animation:fadeIn .3s var(--ease) both; }
   .empty-state svg{ width:64px; height:64px; color:var(--blue-200); margin-bottom:1rem; }
   .empty-state h3{ margin:0 0 0.35rem; color:var(--ink-900); font-size:1.05rem; }
   .empty-state p{ margin:0; font-size:0.85rem; max-width:320px; }
+
   @keyframes fadeIn{ from{ opacity:0; transform:translateY(6px);} to{ opacity:1; transform:translateY(0);} }
   @keyframes slideDown{ from{ opacity:0; transform:translateY(-6px);} to{ opacity:1; transform:translateY(0);} }
   @media (prefers-reduced-motion: reduce){ *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; } }
+
   /* social row */
   .social-row{ display:flex; gap:0.6rem; margin-top:0.85rem; }
   .social-btn{
@@ -163,6 +175,7 @@
   .social-btn svg{ width:18px; height:18px; flex:none; }
   .social-btn:hover{ transform:translateY(-1px); box-shadow:var(--shadow-md); }
   .social-btn.wa{ background:linear-gradient(135deg,#25d366,#1aa851); }
+
   /* floating WA button */
   .wa-fab{
     position:fixed; bottom:22px; right:22px; z-index:60; width:58px; height:58px; border-radius:50%;
@@ -171,6 +184,7 @@
   }
   .wa-fab:hover{ transform:translateY(-2px) scale(1.05); }
   .wa-fab svg{ width:28px; height:28px; }
+
   /* modal overlay */
   .overlay{ position:fixed; inset:0; z-index:70; background:rgba(11,26,51,0.45); display:flex; align-items:center; justify-content:center; padding:1rem; backdrop-filter:blur(2px); }
   .overlay.hidden{ display:none; }
@@ -179,7 +193,9 @@
   .modal-card h3{ margin:0 0 0.35rem; font-size:1.05rem; color:var(--ink-900); }
   .modal-card p{ margin:0 0 1.1rem; font-size:0.85rem; color:var(--ink-500); line-height:1.5; }
   .modal-card .dismiss{ margin-top:0.8rem; background:none; border:none; color:var(--ink-300); font-size:0.78rem; font-weight:700; text-decoration:underline; cursor:pointer; }
+
   body.has-fab .wrap{ padding-bottom:2rem; }
+
   @media (max-width:640px){
     .brand-text h1{ font-size:1rem; }
     .stat-pills{ display:none; }
@@ -260,6 +276,12 @@
   continueBtn.addEventListener('click', unlock);
 })();
 </script>
+
+
+
+
+
+
 <!-- WhatsApp join popup -->
 <div class="overlay hidden" id="waPopup">
   <div class="modal-card">
@@ -273,10 +295,12 @@
     <button class="dismiss" id="waPopupDismiss" type="button">Maybe later</button>
   </div>
 </div>
+
 <!-- Floating WhatsApp button -->
 <a class="wa-fab" href="https://whatsapp.com/channel/0029VbCJQjnHAdNUh7epwp2V" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="cursor:pointer;">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7.3 3.9Z"/></svg>
 </a>
+
 <header class="site-header">
   <div class="header-inner">
     <div class="brand-row">
@@ -314,14 +338,17 @@
     <div class="breadcrumb" id="breadcrumb"></div>
   </div>
 </header>
+
 <div class="wrap">
   <div class="folder-grid" id="folderGrid"></div>
 </div>
+
 <script>
 // ================================================================
 // 1. DATA
 // ================================================================
 const rawData = [{"key": "calculation-nichod", "icon": "🧮", "name": "Calculation Nichod", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7887e8d21ba0f29aa875"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7894e8d21ba0f29aa877"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f789ee8d21ba0f29aa879"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f78abe8d21ba0f29aa87b"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78b6e8d21ba0f29aa87d"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78c0e8d21ba0f29aa87f"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78cce8d21ba0f29aa881"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f78d7e8d21ba0f29aa883"}]}, {"key": "orientation-day", "icon": "🎉", "name": "Orientation Day", "items": [{"title": "15 Feb", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78e0e8d21ba0f29aa885"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78e9e8d21ba0f29aa887"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f78f5e8d21ba0f29aa889"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7902e8d21ba0f29aa88b"}]}, {"key": "percentage", "icon": "💯", "name": "Percentage", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7918e8d21ba0f29aa88f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7926e8d21ba0f29aa891"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7933e8d21ba0f29aa893"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f793de8d21ba0f29aa895"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7955e8d21ba0f29aa899"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f795fe8d21ba0f29aa89b"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f796be8d21ba0f29aa89d"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7977e8d21ba0f29aa89f"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f798be8d21ba0f29aa8a3"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7996e8d21ba0f29aa8a5"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f79a0e8d21ba0f29aa8a7"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f79ade8d21ba0f29aa8a9"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f79c1e8d21ba0f29aa8ad"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f79cee8d21ba0f29aa8af"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f79dae8d21ba0f29aa8b1"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f79e3e8d21ba0f29aa8b3"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f79fce8d21ba0f29aa8b7"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a08e8d21ba0f29aa8b9"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a14e8d21ba0f29aa8bb"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7a20e8d21ba0f29aa8bd"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a3ae8d21ba0f29aa8c1"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a47e8d21ba0f29aa8c3"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a55e8d21ba0f29aa8c5"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7a63e8d21ba0f29aa8c7"}]}, {"key": "ratio-proportion", "icon": "⚖️", "name": "Ratio & Proportion", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a7ee8d21ba0f29aa8cb"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a8ae8d21ba0f29aa8cd"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7a97e8d21ba0f29aa8cf"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7aa2e8d21ba0f29aa8d1"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ab5e8d21ba0f29aa8d5"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7abee8d21ba0f29aa8d7"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7acae8d21ba0f29aa8d9"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7ad4e8d21ba0f29aa8db"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ae8e8d21ba0f29aa8df"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7af4e8d21ba0f29aa8e1"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b00e8d21ba0f29aa8e3"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7b0ae8d21ba0f29aa8e5"}]}, {"key": "mixture-replacement", "icon": "🧪", "name": "Mixture & Replacement", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b20e8d21ba0f29aa8e9"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b2ce8d21ba0f29aa8eb"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b3ae8d21ba0f29aa8ed"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7b43e8d21ba0f29aa8ef"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b59e8d21ba0f29aa8f3"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b63e8d21ba0f29aa8f5"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7b6ee8d21ba0f29aa8f7"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7b78e8d21ba0f29aa8f9"}]}, {"key": "time-work-pipes", "icon": "⏳", "name": "Time Work Pipes", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7bbee8d21ba0f29aa918"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7bcae8d21ba0f29aa91a"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7bd5e8d21ba0f29aa91c"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7bdfe8d21ba0f29aa91e"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c1ce8d21ba0f29aa92c"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c41e8d21ba0f29aa930"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c4be8d21ba0f29aa932"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7c54e8d21ba0f29aa934"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c6be8d21ba0f29aa938"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c77e8d21ba0f29aa93a"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7c83e8d21ba0f29aa93c"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7c90e8d21ba0f29aa93e"}]}, {"key": "average", "icon": "📊", "name": "Average", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ca7e8d21ba0f29aa942"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7cb4e8d21ba0f29aa944"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7cc2e8d21ba0f29aa946"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7ccce8d21ba0f29aa948"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ce2e8d21ba0f29aa94c"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7cefe8d21ba0f29aa94e"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7cfde8d21ba0f29aa950"}], "pdf": "#"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d0ae8d21ba0f29aa952"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d14e8d21ba0f29aa954"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d1ee8d21ba0f29aa956"}], "pdf": "#"}]}, {"key": "geometry", "icon": "📐", "name": "Geometry", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d28e8d21ba0f29aa958"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d34e8d21ba0f29aa95a"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d41e8d21ba0f29aa95c"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7d4fe8d21ba0f29aa95e"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d62e8d21ba0f29aa962"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d6fe8d21ba0f29aa964"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7d7ce8d21ba0f29aa966"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7d86e8d21ba0f29aa968"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7da1e8d21ba0f29aa96c"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7dade8d21ba0f29aa96e"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7dbee8d21ba0f29aa970"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7dcfe8d21ba0f29aa972"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7dece8d21ba0f29aa976"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7dfee8d21ba0f29aa978"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e09e8d21ba0f29aa97a"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7e16e8d21ba0f29aa97c"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e2de8d21ba0f29aa980"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e37e8d21ba0f29aa982"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e46e8d21ba0f29aa984"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7e52e8d21ba0f29aa986"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e6be8d21ba0f29aa98a"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e7fe8d21ba0f29aa98c"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7e91e8d21ba0f29aa98e"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7e9de8d21ba0f29aa990"}, {"title": "Class 7", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ebae8d21ba0f29aa994"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ec6e8d21ba0f29aa996"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ed0e8d21ba0f29aa998"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7edae8d21ba0f29aa99a"}, {"title": "Class 8", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ef2e8d21ba0f29aa99e"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7effe8d21ba0f29aa9a0"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f0be8d21ba0f29aa9a2"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7f15e8d21ba0f29aa9a4"}, {"title": "Class 9", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f2ee8d21ba0f29aa9a8"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f39e8d21ba0f29aa9aa"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f44e8d21ba0f29aa9ac"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7f4ee8d21ba0f29aa9ae"}]}, {"key": "mensuration", "icon": "📏", "name": "Mensuration", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f61e8d21ba0f29aa9b2"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f6ee8d21ba0f29aa9b4"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f7be8d21ba0f29aa9b6"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7f86e8d21ba0f29aa9b8"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7f9ae8d21ba0f29aa9bc"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7fa6e8d21ba0f29aa9be"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7fb0e8d21ba0f29aa9c0"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7fbae8d21ba0f29aa9c2"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7fc7e8d21ba0f29aa9c4"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7fd5e8d21ba0f29aa9c6"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7fe0e8d21ba0f29aa9c8"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f7fe9e8d21ba0f29aa9ca"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f7ffee8d21ba0f29aa9ce"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8009e8d21ba0f29aa9d0"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8017e8d21ba0f29aa9d2"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8022e8d21ba0f29aa9d4"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f803be8d21ba0f29aa9d8"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8047e8d21ba0f29aa9da"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8052e8d21ba0f29aa9dc"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f805de8d21ba0f29aa9de"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8074e8d21ba0f29aa9e2"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f807ee8d21ba0f29aa9e4"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f808ce8d21ba0f29aa9e6"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f810fe8d21ba0f29aa9e9"}, {"title": "Class 7", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8129e8d21ba0f29aa9ed"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8134e8d21ba0f29aa9ef"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f813fe8d21ba0f29aa9f1"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8149e8d21ba0f29aa9f3"}]}, {"key": "partnership", "icon": "🤝", "name": "Partnership", "items": [{"title": "Complete", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8163e8d21ba0f29aa9f7"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f816fe8d21ba0f29aa9f9"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8179e8d21ba0f29aa9fb"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8185e8d21ba0f29aa9fd"}]}, {"key": "si-ci", "icon": "💰", "name": "SI CI", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f819ae8d21ba0f29aaa01"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f81a4e8d21ba0f29aaa03"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f81ade8d21ba0f29aaa05"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f81b8e8d21ba0f29aaa07"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f81cee8d21ba0f29aaa0b"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f81d8e8d21ba0f29aaa0d"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f81e5e8d21ba0f29aaa0f"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f81f0e8d21ba0f29aaa11"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8205e8d21ba0f29aaa15"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f820ee8d21ba0f29aaa17"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f821ae8d21ba0f29aaa19"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8223e8d21ba0f29aaa1b"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f823be8d21ba0f29aaa1f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8245e8d21ba0f29aaa21"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f824fe8d21ba0f29aaa23"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f825be8d21ba0f29aaa25"}]}, {"key": "number-system", "icon": "🔢", "name": "Number System", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8276e8d21ba0f29aaa29"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8281e8d21ba0f29aaa2b"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f828fe8d21ba0f29aaa2d"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f829de8d21ba0f29aaa2f"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f82b2e8d21ba0f29aaa33"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f82bce8d21ba0f29aaa35"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f82c6e8d21ba0f29aaa37"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f82d3e8d21ba0f29aaa39"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f82ede8d21ba0f29aaa3d"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f82f6e8d21ba0f29aaa3f"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8303e8d21ba0f29aaa41"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f830de8d21ba0f29aaa43"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8322e8d21ba0f29aaa47"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f832ee8d21ba0f29aaa49"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f833ae8d21ba0f29aaa4b"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8344e8d21ba0f29aaa4d"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8358e8d21ba0f29aaa51"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8366e8d21ba0f29aaa53"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8371e8d21ba0f29aaa55"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f837de8d21ba0f29aaa57"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8395e8d21ba0f29aaa5b"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f83a3e8d21ba0f29aaa5d"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f83b1e8d21ba0f29aaa5f"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f83bae8d21ba0f29aaa61"}, {"title": "Class 7", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f83d4e8d21ba0f29aaa65"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f83e1e8d21ba0f29aaa67"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f83eee8d21ba0f29aaa69"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f83fae8d21ba0f29aaa6b"}, {"title": "Class 8", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8411e8d21ba0f29aaa6f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f841be8d21ba0f29aaa71"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8427e8d21ba0f29aaa73"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8430e8d21ba0f29aaa75"}, {"title": "Class 9", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8448e8d21ba0f29aaa79"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8455e8d21ba0f29aaa7b"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8462e8d21ba0f29aaa7d"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f846ee8d21ba0f29aaa7f"}]}, {"key": "coordinate-geometry", "icon": "📍", "name": "Coordinate Geometry", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8486e8d21ba0f29aaa83"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8491e8d21ba0f29aaa85"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f849be8d21ba0f29aaa87"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f84a7e8d21ba0f29aaa89"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f84c2e8d21ba0f29aaa8d"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f84cce8d21ba0f29aaa8f"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f84d9e8d21ba0f29aaa91"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f84e7e8d21ba0f29aaa93"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8500e8d21ba0f29aaa97"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f850be8d21ba0f29aaa99"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8519e8d21ba0f29aaa9b"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8522e8d21ba0f29aaa9d"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8538e8d21ba0f29aaaa1"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8546e8d21ba0f29aaaa3"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8554e8d21ba0f29aaaa5"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8561e8d21ba0f29aaaa7"}]}, {"key": "algebra", "icon": "📘", "name": "Algebra", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f857ce8d21ba0f29aaaab"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8587e8d21ba0f29aaaad"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8591e8d21ba0f29aaaaf"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f859fe8d21ba0f29aaab1"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f85b4e8d21ba0f29aaab5"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f85c1e8d21ba0f29aaab7"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f85cee8d21ba0f29aaab9"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f85d7e8d21ba0f29aaabb"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f85eee8d21ba0f29aaabf"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f85fce8d21ba0f29aaac1"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f860ae8d21ba0f29aaac3"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8615e8d21ba0f29aaac5"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8631e8d21ba0f29aaac9"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f863ce8d21ba0f29aaacb"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8648e8d21ba0f29aaacd"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8651e8d21ba0f29aaacf"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8666e8d21ba0f29aaad3"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8672e8d21ba0f29aaad5"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f867ee8d21ba0f29aaad7"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f868ae8d21ba0f29aaad9"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86a4e8d21ba0f29aaadd"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86afe8d21ba0f29aaadf"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86b9e8d21ba0f29aaae1"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f86c6e8d21ba0f29aaae3"}, {"title": "Class 7", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86e1e8d21ba0f29aaae7"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86ece8d21ba0f29aaae9"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f86f9e8d21ba0f29aaaeb"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8703e8d21ba0f29aaaed"}]}, {"key": "tsd", "icon": "🚀", "name": "TSD", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f871ae8d21ba0f29aaaf1"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8725e8d21ba0f29aaaf3"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8731e8d21ba0f29aaaf5"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f873de8d21ba0f29aaaf7"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8753e8d21ba0f29aaafb"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8760e8d21ba0f29aaafd"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f876be8d21ba0f29aaaff"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8776e8d21ba0f29aab01"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8789e8d21ba0f29aab05"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8793e8d21ba0f29aab07"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f879de8d21ba0f29aab09"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f87a8e8d21ba0f29aab0b"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f87c2e8d21ba0f29aab0f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f87cde8d21ba0f29aab11"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f87d9e8d21ba0f29aab13"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f87e7e8d21ba0f29aab15"}]}, {"key": "pld", "icon": "🏷️", "name": "PLD", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8823e8d21ba0f29aab1f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8831e8d21ba0f29aab21"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f883de8d21ba0f29aab23"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f884be8d21ba0f29aab25"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8860e8d21ba0f29aab29"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f886ce8d21ba0f29aab2b"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8879e8d21ba0f29aab2d"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8886e8d21ba0f29aab2f"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f889ee8d21ba0f29aab33"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f88a8e8d21ba0f29aab35"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f88b2e8d21ba0f29aab37"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f88bbe8d21ba0f29aab39"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f88d5e8d21ba0f29aab3d"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f88e2e8d21ba0f29aab3f"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f88ece8d21ba0f29aab41"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f88f8e8d21ba0f29aab43"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8910e8d21ba0f29aab47"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f891be8d21ba0f29aab49"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8928e8d21ba0f29aab4b"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8934e8d21ba0f29aab4d"}]}, {"key": "trigonometry", "icon": "📐", "name": "Trigonometry", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8948e8d21ba0f29aab51"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8954e8d21ba0f29aab55"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f895de8d21ba0f29aab57"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8966e8d21ba0f29aab59"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8981e8d21ba0f29aab5d"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8992e8d21ba0f29aab5f"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f899fe8d21ba0f29aab61"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f89ace8d21ba0f29aab63"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f89c4e8d21ba0f29aab67"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f89d2e8d21ba0f29aab69"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f89dfe8d21ba0f29aab6b"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f89ede8d21ba0f29aab6d"}, {"title": "Class 4", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a01e8d21ba0f29aab71"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a0ae8d21ba0f29aab73"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a14e8d21ba0f29aab75"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8a1ee8d21ba0f29aab77"}, {"title": "Class 5", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a38e8d21ba0f29aab7b"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a41e8d21ba0f29aab7d"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a4ce8d21ba0f29aab7f"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8a59e8d21ba0f29aab81"}, {"title": "Class 6", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a71e8d21ba0f29aab85"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a7ce8d21ba0f29aab87"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8a86e8d21ba0f29aab89"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8a92e8d21ba0f29aab8b"}, {"title": "Max Min", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8aace8d21ba0f29aab8f"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8ab9e8d21ba0f29aab91"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8ac3e8d21ba0f29aab93"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8ad0e8d21ba0f29aab95"}, {"title": "Height & Distance", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8ae9e8d21ba0f29aab99"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8af6e8d21ba0f29aab9b"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b02e8d21ba0f29aab9d"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8b0ce8d21ba0f29aab9f"}]}, {"key": "surds-simplification", "icon": "➗", "name": "Surds & Simplification", "items": [{"title": "Class 1", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b26e8d21ba0f29aaba3"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b33e8d21ba0f29aaba5"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b3fe8d21ba0f29aaba7"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8b48e8d21ba0f29aaba9"}, {"title": "Class 2", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b5ee8d21ba0f29aabad"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b69e8d21ba0f29aabaf"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b72e8d21ba0f29aabb1"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8b7de8d21ba0f29aabb3"}, {"title": "Class 3", "videos": [{"label": "720p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8b94e8d21ba0f29aabb7"}, {"label": "480p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8ba2e8d21ba0f29aabb9"}, {"label": "360p", "url": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/watch/6a5f8baee8d21ba0f29aabbb"}], "pdf": "https://fs1qydv17g1-161-162e5df28a45.herokuapp.com/dl/6a5f8bb9e8d21ba0f29aabbd"}]}];
+
 // ================================================================
 // 2. ICONS
 // ================================================================
@@ -332,6 +359,7 @@ const ICONS = {
   external: '<svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   emptyBox: '<svg viewBox="0 0 24 24" fill="none"><path d="M4 8l8-4 8 4-8 4-8-4Zm0 0v8l8 4m0-12v12m8-12v8l-8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 };
+
 // ================================================================
 // 3. DOM refs
 // ================================================================
@@ -343,6 +371,7 @@ const collapseAllBtnEl = document.getElementById('collapseAllBtn');
 const statFoldersEl = document.getElementById('statFolders');
 const statFilesEl = document.getElementById('statFiles');
 const breadcrumbEl = document.getElementById('breadcrumb');
+
 // ================================================================
 // 4. Prep data
 // ================================================================
@@ -353,6 +382,7 @@ function normalizeResourceUrl(url){
     'https://fs1enchanted-flower-68930222-873172716e82.herokuapp.com'
   );
 }
+
 const folders = rawData.map(function(folder, folderIndex){
   const items = folder.items.map(function(item, itemIndex){
     return {
@@ -383,10 +413,12 @@ const folders = rawData.map(function(folder, folderIndex){
     built: false
   };
 });
+
 const TOTAL_FOLDERS = folders.length;
 const TOTAL_FILES = folders.reduce(function(sum, f){ return sum + f.itemCount; }, 0);
 statFoldersEl.textContent = TOTAL_FOLDERS;
 statFilesEl.textContent = TOTAL_FILES;
+
 // ================================================================
 // 5. Helpers
 // ================================================================
@@ -404,12 +436,15 @@ function highlight(text, query){
   const after = escapeHTML(text.slice(idx + query.length));
   return before + '<mark>' + match + '</mark>' + after;
 }
+
 function videoStreamUrl(url){
   return url ? url.replace('/watch/', '/dl/') : url;
 }
+
 let videoModalEl = null;
 let videoPlayerEl = null;
 let videoTitleEl = null;
+
 function closeVideoPlayer(){
   if (!videoModalEl) return;
   videoPlayerEl.pause();
@@ -418,6 +453,7 @@ function closeVideoPlayer(){
   videoModalEl.classList.remove('show');
   document.body.style.overflow = '';
 }
+
 function openVideoPlayer(url, title){
   if (!videoModalEl){
     const style = document.createElement('style');
@@ -434,6 +470,7 @@ function openVideoPlayer(url, title){
       '.gg-video-player{display:block;width:100%;max-height:76vh;background:#000;border-radius:12px}' +
       '.gg-video-help{margin:.6rem .2rem .1rem;color:#a9bdd5;font-size:.75rem}';
     document.head.appendChild(style);
+
     videoModalEl = document.createElement('div');
     videoModalEl.className = 'gg-video-modal';
     videoModalEl.innerHTML =
@@ -456,20 +493,24 @@ function openVideoPlayer(url, title){
       videoTitleEl.textContent = videoTitleEl.textContent + ' — stream unavailable';
     });
   }
+
   videoTitleEl.textContent = title;
   videoPlayerEl.src = url;
   videoModalEl.classList.add('show');
   document.body.style.overflow = 'hidden';
   videoPlayerEl.focus();
 }
+
 function createFileItemEl(item, query){
   const el = document.createElement('div');
   el.className = 'file-item';
+
   const name = document.createElement('div');
   name.className = 'file-name';
   name.innerHTML = highlight(item.title, query);
   name.title = item.title;
   el.appendChild(name);
+
   const actions = document.createElement('div');
   actions.className = 'file-actions';
   if (item.videos && item.videos.length){
@@ -495,6 +536,7 @@ function createFileItemEl(item, query){
   el.appendChild(actions);
   return el;
 }
+
 function populateFileList(folder, query, subsetItems){
   const items = subsetItems || folder.items;
   const frag = document.createDocumentFragment();
@@ -504,6 +546,7 @@ function populateFileList(folder, query, subsetItems){
   folder.listEl.innerHTML = '';
   folder.listEl.appendChild(frag);
 }
+
 function setFolderOpen(folder, open, query, subsetItems){
   folder.open = open;
   folder.cardEl.classList.toggle('open', open);
@@ -513,13 +556,16 @@ function setFolderOpen(folder, open, query, subsetItems){
   }
   folder.bodyEl.style.maxHeight = open ? folder.bodyEl.scrollHeight + 400 + 'px' : '0px';
 }
+
 function toggleFolder(folder){
   setFolderOpen(folder, !folder.open, searchInputEl.value.trim().toLowerCase());
 }
+
 function createFolderCardEl(folder){
   const card = document.createElement('div');
   card.className = 'folder-card';
   folder.cardEl = card;
+
   const header = document.createElement('div');
   header.className = 'folder-header';
   header.innerHTML =
@@ -530,6 +576,7 @@ function createFolderCardEl(folder){
   header.querySelector('[data-title]').innerHTML = escapeHTML(folder.name);
   header.addEventListener('click', function(){ toggleFolder(folder); });
   card.appendChild(header);
+
   const body = document.createElement('div');
   body.className = 'folder-body';
   folder.bodyEl = body;
@@ -541,8 +588,10 @@ function createFolderCardEl(folder){
   bodyInner.appendChild(list);
   body.appendChild(bodyInner);
   card.appendChild(body);
+
   return card;
 }
+
 function renderAllFolderShells(){
   const frag = document.createDocumentFragment();
   folders.forEach(function(folder){
@@ -551,6 +600,7 @@ function renderAllFolderShells(){
   folderGridEl.appendChild(frag);
 }
 renderAllFolderShells();
+
 // ================================================================
 // 6. Search
 // ================================================================
@@ -561,6 +611,7 @@ function renderEmptyState(){
   el.innerHTML = ICONS.emptyBox + '<h3>No results found</h3><p>Try a different search term.</p>';
   folderGridEl.appendChild(el);
 }
+
 let emptyShown = false;
 function restoreFolderGrid(){
   if (emptyShown){
@@ -569,6 +620,7 @@ function restoreFolderGrid(){
     emptyShown = false;
   }
 }
+
 function updateBreadcrumb(query){
   if (!query){ breadcrumbEl.textContent = ''; return; }
   let matches = 0;
@@ -578,10 +630,12 @@ function updateBreadcrumb(query){
   });
   breadcrumbEl.textContent = matches + ' result' + (matches === 1 ? '' : 's') + ' for "' + query + '"';
 }
+
 function applySearch(rawQuery){
   const query = rawQuery.trim().toLowerCase();
   clearBtnEl.classList.toggle('show', query.length > 0);
   updateBreadcrumb(query);
+
   if (!query){
     restoreFolderGrid();
     folders.forEach(function(folder){
@@ -592,6 +646,7 @@ function applySearch(rawQuery){
     });
     return;
   }
+
   restoreFolderGrid();
   let anyVisible = false;
   folders.forEach(function(folder){
@@ -606,8 +661,10 @@ function applySearch(rawQuery){
     folder.cardEl.querySelector('[data-count]').textContent = subset.length + ' items';
     setFolderOpen(folder, true, query, subset);
   });
+
   if (!anyVisible){ renderEmptyState(); emptyShown = true; }
 }
+
 function handleSearchInput(){ applySearch(searchInputEl.value); }
 searchInputEl.addEventListener('input', handleSearchInput);
 clearBtnEl.addEventListener('click', function(){
@@ -615,6 +672,7 @@ clearBtnEl.addEventListener('click', function(){
   applySearch('');
   searchInputEl.focus();
 });
+
 function expandAll(){
   folders.forEach(function(f){ if (!f.cardEl.classList.contains('hidden-card')) setFolderOpen(f, true, searchInputEl.value.trim().toLowerCase()); });
 }
@@ -623,6 +681,7 @@ function collapseAll(){
 }
 expandAllBtnEl.addEventListener('click', expandAll);
 collapseAllBtnEl.addEventListener('click', collapseAll);
+
 // ================================================================
 // 7. WhatsApp popup
 // ================================================================
@@ -638,6 +697,7 @@ if (!sessionStorage.getItem('waPopupShown')){
     try { sessionStorage.setItem('waPopupShown', '1'); } catch(e){}
   }, 900);
 }
+
 // ================================================================
 // 8. Standalone access compatibility
 // ================================================================
@@ -651,4 +711,3 @@ if (!sessionStorage.getItem('waPopupShown')){
 </script>
 </body>
 </html>
-
